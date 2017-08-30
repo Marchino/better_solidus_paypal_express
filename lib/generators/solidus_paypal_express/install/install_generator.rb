@@ -20,7 +20,7 @@ module SolidusPaypalExpress
       end
 
       def add_migrations
-        run 'bundle exec rake railties:install:migrations FROM=spree_paypal_express'
+        run 'bundle exec rake railties:install:migrations FROM=solidus_paypal_express'
       end
 
       def run_migrations

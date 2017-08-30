@@ -16,10 +16,10 @@ SolidusPaypalExpress = {
     return $('div[data-hook="checkout_payment_step"] input[type="radio"][name="order[payments_attributes][][payment_method_id]"]:checked');
   },
   hideSaveAndContinue: function() {
-    $("#checkout_form_payment [data-hook=buttons]").hide();
+    $("#checkout_form_payment [data-hook=buttons] input[name=commit]").hide();
   },
   showSaveAndContinue: function() {
-    $("#checkout_form_payment [data-hook=buttons]").show();
+    $("#checkout_form_payment [data-hook=buttons] input[name=commit]").show();
   }
 }
 
