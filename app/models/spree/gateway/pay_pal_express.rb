@@ -20,6 +20,7 @@ module Spree
     def provider
       ::PayPal::SDK.configure(
         :mode      => preferred_server.present? ? preferred_server : "sandbox",
+        :ssl_options => { :ca_file => nil },
         :username  => preferred_login,
         :password  => preferred_password,
         :signature => preferred_signature)
